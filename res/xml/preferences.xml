@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:roundr="roundrprefs"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="键盘灯开关" android:key="@string/pref_lock_on_key" android:summary="需要root授权" />
+    <PreferenceScreen android:title="全局圆角设置" android:key="roundr">
+        <intent android:targetPackage="com.android.systemui" android:action="android.intent.action.MAIN" android:targetClass="com.android.systemui.roundr.MainActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="夜间模式" android:key="screen">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.screenfilter.MainActivity" />
+    </PreferenceScreen>
+</PreferenceScreen>
